@@ -2,6 +2,13 @@
 ### aka ***PartKaizen***
 Continued upgrades for your parrts
 
+>  I have been slowly working on a set of configs I like to refer to as "PartKaizen" or "KaizenKensai". So far I have SAS and most LFO engines with multiple upgrades. (The engine upgrades include thrust/ISP and curves) 
+ 
+> Eventually I want to have many more parts with upgrades, and am considering adding one or more lines on the CTT for these upgrades (have to unlock with science points) to be unlocked. 
+ 
+> Obvious choices are antenna (range,Tx rate, EC Consumption), part (mass, strength, heat) and so on. 
+
+
 See ChangeLog.txt for details of mod changes
 
 Extract to your KSP folder.
