@@ -1,8 +1,8 @@
 # KaizenKensai
 ### aka ***PartKaizen***
-Continued upgrades for your parrts
+Continued upgrades for your parts
 
->  I have been slowly working on a set of configs I like to refer to as "PartKaizen" or "KaizenKensai". So far I have SAS and most LFO engines with multiple upgrades. (The engine upgrades include thrust/ISP and curves) 
+>  I have been slowly working on a set of configurations I like to refer to as "PartKaizen" or "KaizenKensai". So far I have SAS and most LFO engines with multiple upgrades. (The engine upgrades include thrust/ISP and curves) 
  
 > Eventually I want to have many more parts with upgrades, and am considering adding one or more lines on the CTT for these upgrades (have to unlock with science points) to be unlocked. 
  
