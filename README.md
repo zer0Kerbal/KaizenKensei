@@ -19,6 +19,11 @@ Extract to your KSP folder.
  * ![Kerbal Space Program (KSP)](https://www.kerbalspaceprogram.com/) 
  * ![ModuleManager](http://forum.kerbalspaceprogram.com/index.php?/topic/50533-105-module-manager-2618-january-17th-with-even-more-sha-and-less-bug/) 
 
+## Recommends
+ * ![UpgradesUIExtensions](https://github.com/gotmachine/UpgradesUIExtensions)
+ * ![UpgradesUIExtensions](https://forum.kerbalspaceprogram.com/index.php?/topic/158081-122-upgradesgui-v15-upgrades-info-and-selection-in-vabsph-part-tooltips/)
+ * ![UpgradeEditor](https://forum.kerbalspaceprogram.com/index.php?/topic/167548-131-upgrade-editor-choose-upgrades-for-each-part-in-vab-or-sph/)
+
 ## License  
 content licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA-4.0) International License.
 
