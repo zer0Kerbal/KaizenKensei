@@ -1,0 +1,62 @@
+@PART[SSTU-SC-A-DM]:FINAL
+{
+	%CrewCapacity = 2
+	!MODULE[PartStatsUpgradeModule]{}
+	MODULE
+	{
+		name = PartStatsUpgradeModule
+		showUpgradesInModuleInfo = true
+		UPGRADES
+		{
+			UPGRADE 
+			{
+				name__ = SC-A-DM-3
+				description__ = SSTU-SC-A-DM: Extra seat w/ suitable supplies
+				techRequired__ = commandModules
+				IsExclusiveUpgrade__ = true
+				PartStats
+				{
+					cost = 800
+					CrewCapacity = 3
+					
+					@RESOURCE[Food]:NEEDS[TacLifeSupport]
+					{
+						amount = 3.291
+						maxAmount = 3.291
+					}
+					@RESOURCE[Water]:NEEDS[TacLifeSupport]
+					{
+						amount = 2.175
+						maxAmount = 2.175
+					}
+					@RESOURCE[Oxygen]:NEEDS[TacLifeSupport]
+					{
+						amount = 333.114
+						maxAmount = 333.114
+					}
+					@RESOURCE[CarbonDioxide]:NEEDS[TacLifeSupport]
+					{
+						maxAmount = 287.739
+					}
+					@RESOURCE[Waste]:NEEDS[TacLifeSupport]
+					{
+						maxAmount = 0.3
+					}
+					@RESOURCE[WasteWater]:NEEDS[TacLifeSupport]
+					{
+						maxAmount = 2.772
+					}
+				}
+			}
+		}
+	}
+}
+PARTUPGRADE
+{
+	name = SC-A-DM-3
+	partIcon = SSTU-SC-A-DM
+	title = SSTU - SC - A - DM-3
+    description = An upgrade for the SC-A-DM which adds an extra seat, and extra life support supplies (if such a mod is installed). Now you can take the full suite of Kerbal professions with you on one mission.
+	techRequired = commandModules
+	entryCost = 10000
+}

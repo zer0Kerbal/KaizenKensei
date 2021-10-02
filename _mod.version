@@ -1,0 +1,37 @@
+{
+    "NAME": "Keridian Dynamics Vessel Assembly (KDVA)",
+    "URL": "https://raw.githubusercontent.com/zer0Kerbal/KeridianDynamics/master/KeridianDynamics.version",
+    "DOWNLOAD": "https://github.com/zer0Kerbal/KeridianDynamics/releases/latest",
+    "CHANGE_LOG_URL": "https://raw.githubusercontent.com/zer0Kerbal/KeridianDynamics/master/Changelog.cfg",
+    "GITHUB": {
+        "USERNAME": "zer0Kerbal",
+        "REPOSITORY": "KeridianDynamics",
+        "ALLOW_PRE_RELEASE": false
+    },
+    "VERSION" :
+    {
+        "MAJOR" : 0,
+        "MINOR" : 8,
+        "PATCH" : 9,
+        "BUILD" : 1
+    },
+    "KSP_VERSION": {
+        "MAJOR": 1,
+        "MINOR": 8,
+        "PATCH": 1
+    },
+    "KSP_VERSION_MIN": {
+        "MAJOR": 1,
+        "MINOR": 8,
+        "PATCH": 1
+    },
+    "KSP_VERSION_MAX": {
+        "MAJOR": 1,
+        "MINOR": 8,
+        "PATCH": 9999
+    },
+    "INSTALL_LOC": {
+        "NAME": "KeridianDynamics",
+        "DIRECTORY": "KeridianDynamics"
+    }
+}

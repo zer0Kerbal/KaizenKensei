@@ -1,0 +1,229 @@
+@PART[]:HAS[@MODULE[KaizenKensai]]:NEEDS[KaizenKensai]:FOR[KaizenKensai]
+{
+	%MODULE[KaizenKensai]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 1]
+	{
+	}
+	%MODULE[KaizenKensai]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 2]
+	{
+	// add temp
+		@name = ScienceBox_mk2
+		@title = Radial Science Bay mkII upgrade, Thermometer
+		@description = Like a tricorder, but better!
+		@entryCost = 5000
+		@cost += 900
+		@mass += 0.005
+		@TechRequired = engineering101
+
+		MODULE
+		{
+			name = ModuleEnviroSensor
+			sensorType = TEMP
+		}
+		MODULE
+		{
+			name = ModuleScienceExperiment
+			experimentID = temperatureScan
+			experimentActionName = Log Temperature
+			resetActionName = Delete Temperature Data
+			useStaging = False
+			useActionGroups = True
+			hideUIwhenUnavailable = False
+			xmitDataScalar = 0.5
+			dataIsCollectable = True
+			collectActionName = Take Temperature Data
+			interactionRange = 1.2
+			rerunnable = True
+			usageReqMaskInternal = 1
+			usageReqMaskExternal = 8
+		}
+	}
+	%MODULE[KaizenKensai]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 3]
+	{
+	// add barometer
+		@name = ScienceBox_mk3
+		@title = Radial Science Bay mkIII upgrade, Barometer
+		@description = Like a tricorder, but better!
+		@entryCost = 5000
+		@cost += 880
+		@mass += 0.005
+		@TechRequired = survivability
+		MODULE
+		{
+			name = ModuleEnviroSensor
+			sensorType = PRES
+		}
+		MODULE
+		{
+			name = ModuleScienceExperiment
+			experimentID = barometerScan
+			experimentActionName = Log Pressure
+			resetActionName = Delete Pressure Data
+			useStaging = False
+			useActionGroups = True
+			hideUIwhenUnavailable = False
+			xmitDataScalar = 0.5
+			dataIsCollectable = True
+			collectActionName = Take Pressure Data
+			interactionRange = 1.2
+			rerunnable = True
+			usageReqMaskInternal = 1
+			usageReqMaskExternal = 8
+		}
+	}
+
+	%MODULE[KaizenKensai]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 4]
+	{
+		// add Science Bay
+		@name = ScienceBox_mk4
+		@title = Radial Science Bay mkIV upgrade, Materials Bay
+		@description = Like a tricorder, but better!
+		@entryCost = 10000
+		@cost += 1800
+		@mass += 0.2
+		@TechRequired = basicScience
+
+		MODULE
+		{
+			name = ModuleScienceExperiment
+			TechRequired = basicScience
+			experimentID = mobileMaterialsLab
+			experimentActionName = Observe Materials Bay
+			resetActionName = Reset Materials Bay
+			useStaging = False
+			useActionGroups = True
+			hideUIwhenUnavailable = True
+			xmitDataScalar = 0.2
+			FxModules = 0
+			dataIsCollectable = True
+			collectActionName = Collect Materials Data
+			interactionRange = 1.2
+		}
+	}
+
+	%MODULE[KaizenKensai]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 5]
+	{
+	// add
+			@name = ScienceBox_mk4
+			@title = Radial Science Bay mkIV upgrade, Materials Bay
+			@description = Like a tricorder, but better!
+			@entryCost = 10000
+			@cost += 1800
+			@mass += 0.2
+			@TechRequired = basicScience
+
+			@name = ScienceBox_mk5
+			@title = Radial Science Bay mkV upgrade, Seismic and Atmosphere
+			@description = Like a tricorder, but better!
+			@entryCost = 50000
+			@cost += 12000
+			@mass += 0.01
+			@TechRequired = scienceTech
+
+			MODULE
+			{
+				name = ModuleEnviroSensor
+				sensorType = ACC
+			}
+			MODULE
+			{
+				name = ModuleScienceExperiment
+				experimentID = seismicScan
+				experimentActionName = Log Seismic Scan
+				resetActionName = Delete Seismic Data
+				useStaging = False
+				useActionGroups = True
+				hideUIwhenUnavailable = False
+				xmitDataScalar = 0.5
+				dataIsCollectable = True
+				collectActionName = Take Seismic Data
+				interactionRange = 1.2
+				rerunnable = True
+				usageReqMaskInternal = 1
+				usageReqMaskExternal = 8
+			}
+
+
+			MODULE
+			{
+				name = ModuleScienceExperiment
+				experimentID = atmosphereAnalysis
+				experimentActionName = Log Atmospheric Scan
+				resetActionName = Delete Atmospheric Data
+				useStaging = False
+				useActionGroups = True
+				hideUIwhenUnavailable = False
+				xmitDataScalar = 0.6
+				dataIsCollectable = True
+				collectActionName = Take Atmospheric Data
+				interactionRange = 1.5
+				rerunnable = True
+				usageReqMaskInternal = 1
+				usageReqMaskExternal = 8
+				reviewActionName = Review Data
+			}
+		}
+		UPGRADE
+		{
+			name__ = GOO
+			description__ = 
+			@name = ScienceBox_mk6
+			@title = Radial Science Bay mkVI upgrade, Gravity
+			@description = Like a tricorder, but better!
+			@entryCost = 45000
+			@cost += 8800
+			@mass += 0.005
+			@TechRequired = advScienceTech
+
+			MODULE
+			{
+				name = ModuleEnviroSensor
+				sensorType = GRAV
+			}
+			MODULE
+			{
+				name = ModuleScienceExperiment
+				experimentID = gravityScan
+				experimentActionName = Log Gravity Data
+				resetActionName = Delete Gravity Data
+				useStaging = False
+				useActionGroups = True
+				hideUIwhenUnavailable = False
+				xmitDataScalar = 0.4
+				dataIsCollectable = True
+				collectActionName = Take Gravity Data
+				interactionRange = 1.2
+				rerunnable = True
+				usageReqMaskInternal = 1
+				usageReqMaskExternal = 8
+			}
+	}
+
+	%MODULE[KaizenKensai[]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 6]
+	{
+	}
+
+	%MODULE[KaizenKensai[]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 7]
+	{
+	}
+
+	%MODULE[KaizenKensai[]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 8]
+	{
+	}
+
+	%MODULE[KaizenKensai[]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 9]
+	{
+	}
+
+	%MODULE[KaizenKensai[]:HAS[@MODULE[KaizenKensai]]:HAS[#scienceupgrade < 10]
+	{
+	}
+	
+	
+}
+
+MODULE[KaizenKensai]:NEEDS[KaizenKensai]
+{
+	name = KaizenKensai
+	moduleIsEnabled = false﻿
+	scienceupgrade = 0
+}

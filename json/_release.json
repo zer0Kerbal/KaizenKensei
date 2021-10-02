@@ -1,0 +1,63 @@
+{
+	"SCHEMA": "1.0.0.0",
+	"MODNAME": "Keridian Dynamics",
+	"ABBV": "KDVA",
+	"AUTHOR": "Eleusis La Arwall, zer0Kerbal",
+	"MODFOLDER": "KeridianDynamics",
+	"SUBFOLDER": "",
+	"VERSIONFILE": "auto",
+	"MODTYPE": "Parts",
+	"RELEASESDIR": "Releases",
+	"CHANGELOG": "Changelog.md",
+	"CKAN": {
+		"IDENTIFIER": "KeridianDynamicsVesselAssembly",
+		"DRAFT": false,
+		"PRERELEASE": false
+	},
+	"URL": {
+		"SPACEDOCK_ID": "308",
+		"CURSEFORGE": "KeridianDynamics",
+		"GITHUB": "zer0Kerbal/KeridianDynamics",
+		"FORUM": "202945"
+	},
+	"ORIGURL": {
+		"SPACEDOCK_ID": "308",
+		"CURSEFORGE": "keridiandynamics",
+		"GITHUB": "EleusisLaArwall/KeridianDynamics-VesselAssembly",
+		"FORUM": "116987",
+		"LICENSE": "CC BY-SA 4.0"
+	},
+	"KSPVERSION": "1.8.1",
+	"LICENSE": "CC BY-SA 4.0",
+	"CODE": {
+		"DNET": "no source code",
+		"UNIT": "Unity 2017",
+		"LANG": "Module Manager"
+	},
+	"DEPENDS": [
+		{ "MODNAME": "a", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "b", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "v", "MODURL": "", "CKANID": "" }
+	],
+	"RECOMMENDS": [
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" }
+	],
+	"SUPPORTS": [
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" }
+	],
+	"SUGGESTS": [
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" },
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" }
+	],
+	"CONFLICTS": [
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" }
+	],
+	"REPLACES": [
+		{ "MODNAME": "", "MODURL": "", "CKANID": "" }
+	]
+}
